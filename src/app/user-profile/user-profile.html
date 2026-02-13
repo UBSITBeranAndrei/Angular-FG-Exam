@@ -1,0 +1,67 @@
+<div class="profile-container">
+    <div class="profile-header">
+      <h1>{{ profileTitle }}</h1>
+      <span class="status-badge" [class.active]="user.isActive">
+        {{ user.isActive ? 'Active' : 'Inactive' }}
+      </span>
+    </div>
+  
+    <div class="profile-card">
+      <div class="profile-avatar">
+        <div class="avatar-circle">
+          {{ user.firstName.charAt(0) }}{{ user.lastName.charAt(0) }}
+        </div>
+      </div>
+  
+      <div class="profile-details">
+        <h2>{{ user.firstName }} {{ user.lastName }}</h2>
+        
+        <div class="detail-group">
+          <div class="detail-item">
+            <span class="detail-label">Email:</span>
+            <span class="detail-value">{{ user.email }}</span>
+          </div>
+  
+          <div class="detail-item">
+            <span class="detail-label">Age:</span>
+            <span class="detail-value">{{ user.age }} years old</span>
+          </div>
+  
+          <div class="detail-item">
+            <span class="detail-label">Location:</span>
+            <span class="detail-value">{{ user.location }}</span>
+          </div>
+  
+          <div class="detail-item">
+            <span class="detail-label">Member Since:</span>
+            <span class="detail-value">{{ user.joinDate }}</span>
+          </div>
+  
+          <div class="detail-item">
+            <span class="detail-label">Account Status:</span>
+            <span class="detail-value">{{ user.isActive ? 'Active' : 'Inactive' }}</span>
+          </div>
+        </div>
+  
+        <div class="bio-section">
+          <h3>About Me</h3>
+          <p>{{ user.bio }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="typescript-info">
+      <h3>TypeScript Object Type Demonstration</h3>
+      <p>This component uses a custom TypeScript interface called <code>UserProfile</code> with the following properties:</p>
+      <ul>
+        <li><strong>firstName:</strong> string = "{{ user.firstName }}"</li>
+        <li><strong>lastName:</strong> string = "{{ user.lastName }}"</li>
+        <li><strong>email:</strong> string = "{{ user.email }}"</li>
+        <li><strong>age:</strong> number = {{ user.age }}</li>
+        <li><strong>location:</strong> string = "{{ user.location }}"</li>
+        <li><strong>bio:</strong> string = "{{ user.bio }}"</li>
+        <li><strong>joinDate:</strong> string = "{{ user.joinDate }}"</li>
+        <li><strong>isActive:</strong> boolean = {{ user.isActive }}</li>
+      </ul>
+    </div>
+  </div>

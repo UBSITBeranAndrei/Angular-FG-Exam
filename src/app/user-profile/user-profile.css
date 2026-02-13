@@ -1,0 +1,149 @@
+.profile-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-header h1 {
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .status-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: #95a5a6;
+    color: white;
+  }
+  
+  .status-badge.active {
+    background-color: #27ae60;
+  }
+  
+  .profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-avatar {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .avatar-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .profile-details h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .detail-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .detail-item {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+  }
+  
+  .detail-label {
+    display: block;
+    font-weight: 600;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .detail-value {
+    display: block;
+    color: #2c3e50;
+    font-size: 1.1rem;
+  }
+  
+  .bio-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+  }
+  
+  .bio-section h3 {
+    color: #34495e;
+    margin-bottom: 1rem;
+  }
+  
+  .bio-section p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .typescript-info {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+  }
+  
+  .typescript-info h3 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+  }
+  
+  .typescript-info p {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .typescript-info code {
+    background-color: #f8f9fa;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    color: #e74c3c;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .typescript-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .typescript-info li {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+  }

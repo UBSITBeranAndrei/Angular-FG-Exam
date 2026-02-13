@@ -1,0 +1,34 @@
+<div class="home-container">
+    <div class="hero-section">
+      <h1>{{ appTitle }}</h1>
+      <p class="description">{{ appDescription }}</p>
+    </div>
+  
+    <div class="info-section">
+      <h2>{{ welcomeMessage }}</h2>
+      
+      <div class="info-cards">
+        <div class="info-card">
+          <h3>Student Information</h3>
+          <p><strong>Name:</strong> {{ studentName }}</p>
+          <p><strong>Course:</strong> {{ course }}</p>
+          <p><strong>Year:</strong> {{ currentYear }}</p>
+        </div>
+  
+        <div class="info-card">
+          <h3>Project Status</h3>
+          <p><strong>Visit Count:</strong> {{ visitCount }}</p>
+          <p><strong>Project Complete:</strong> {{ isProjectComplete ? 'Yes' : 'In Progress' }}</p>
+        </div>
+      </div>
+  
+      <div class="typescript-demo">
+        <h3>TypeScript Primitive Types Demonstration</h3>
+        <ul>
+          <li><strong>String:</strong> {{ studentName }} (type: string)</li>
+          <li><strong>Number:</strong> {{ currentYear }} (type: number)</li>
+          <li><strong>Boolean:</strong> {{ isProjectComplete }} (type: boolean)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
